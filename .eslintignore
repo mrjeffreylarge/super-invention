@@ -1,0 +1,7 @@
+# Ignore dependencies
+bower_components
+node_modules
+js/vendor
+
+# Ignore gulpfile
+Gulpfile.js
