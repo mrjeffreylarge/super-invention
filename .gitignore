@@ -4,6 +4,7 @@
 # Ignore managed dependencies
 node_modules
 bower_components
+js/vendor
 
 # Ignore the generated css file
 css/main.css
