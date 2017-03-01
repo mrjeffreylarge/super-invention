@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "eslint:recommended"
+  ],
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "angular": false
+  },
+  "rules": {
+    no-mixed-spaces-and-tabs: "error",
+    no-trailing-spaces: "error",
+    no-multiple-empty-lines: ["error", { "max": 2, "maxEOF": 1 }],
+    eol-last: ["error", "always"],
+    camelcase: "warn",
+    no-multi-spaces: "error",
+    no-whitespace-before-property: "error",
+    space-before-blocks: "error",
+    space-before-function-paren: ["error", "never"],
+    space-in-parens: ["warn", "never"],
+    space-infix-ops: "error",
+    space-unary-ops: "error",
+    brace-style: ["error", "stroustrup"],
+    quotes: ["error", "single", { "avoidEscape": true }],
+    no-param-reassign: "error",
+    eqeqeq: ["error", "smart"],
+    consistent-this: ["error", "self"],
+    no-new-wrappers: "error",
+    max-len: ["warn", 100],
+    no-global-assign: "error",
+    no-implicit-globals: "error",
+
+    curly: "error",
+    default-case: "error",
+    dot-location: ["error", "property"],
+    dot-notation: "error",
+    no-alert: "error",
+    no-else-return: "warn",
+    no-empty-function: "error",
+    no-floating-decimal: "error",
+    no-lone-blocks: "error",
+    no-loop-func: "warn",
+    no-magic-numbers: ["error", { "ignoreArrayIndexes": true, "ignore": [1] }],
+    no-return-assign: "error",
+    no-script-url: "warn",
+    no-self-compare: "error",
+    no-unmodified-loop-condition: "error",
+    no-unused-expressions: "error",
+    vars-on-top: "warn",
+    wrap-iife: ["error", "inside"],
+    yoda: ["error", "never", { "exceptRange": true }],
+
+    no-shadow-restricted-names: "error",
+    no-shadow: "error",
+    no-use-before-define: ["warn", { "functions": false }],
+
+  }
+}
