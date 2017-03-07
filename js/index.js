@@ -3,7 +3,7 @@
 
   var x = 'hello';
 
-  if (x == 'world') {
+  if (x === 'world') {
     // Code
   }
 
