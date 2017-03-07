@@ -8,6 +8,9 @@
     "gulp-sass": "^3.1.0",
     "main-bower-files": "^2.13.1"
   },
+  "scripts": {
+    "start": "npm install && bower install && gulp"
+  },
   "dependencies": {},
   "private": true
 }
