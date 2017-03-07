@@ -7,18 +7,19 @@
     "jquery": true
   },
   "globals": {
-    "angular": false
+    "angular": false,
+    ACG_CONSTANT: false,
+    Drupal: false
   },
   "rules": {
     no-mixed-spaces-and-tabs: "error",
     no-trailing-spaces: "error",
     no-multiple-empty-lines: ["error", { "max": 2, "maxEOF": 1 }],
     eol-last: ["error", "always"],
-    camelcase: "warn",
     no-multi-spaces: "error",
     no-whitespace-before-property: "error",
     space-before-blocks: "error",
-    space-before-function-paren: ["error", "never"],
+    space-before-function-paren: ["error", {"anonymous": "always", "named": "never"}],
     space-in-parens: ["warn", "never"],
     space-infix-ops: "error",
     space-unary-ops: "error",
@@ -31,6 +32,8 @@
     max-len: ["warn", 100],
     no-global-assign: "error",
     no-implicit-globals: "error",
+    indent: ["error", 2],
+    no-unused-vars: ["error", { "args": "none" }],
 
     curly: "error",
     default-case: "error",
@@ -42,7 +45,7 @@
     no-floating-decimal: "error",
     no-lone-blocks: "error",
     no-loop-func: "warn",
-    no-magic-numbers: ["error", { "ignoreArrayIndexes": true, "ignore": [1] }],
+    no-magic-numbers: ["error", { "ignoreArrayIndexes": true, "ignore": [0,1] }],
     no-return-assign: "error",
     no-script-url: "warn",
     no-self-compare: "error",
@@ -55,6 +58,19 @@
     no-shadow-restricted-names: "error",
     no-shadow: "error",
     no-use-before-define: ["warn", { "functions": false }],
+
+    array-bracket-spacing: ["error", "never"],
+    comma-dangle: ["error", "never"],
+    comma-spacing: ["error", { "before": false, "after": true }],
+    comma-style: ["error", "last"],
+    func-call-spacing: ["error", "never"],
+    keyword-spacing: ["error", { "before": true }],
+    max-depth: ["warn", 4],
+    max-lines: ["warn", 350],
+    no-lonely-if: "error",
+    one-var-declaration-per-line: ["error", "initializations"],
+    semi-spacing: "error",
+    semi: "error"
 
   }
 }

@@ -1,14 +1,12 @@
-/*
- * JavaScript
- */
+(function ($) {
+  'use strict';
 
-(function($) {
-  var a = 1;
+  var x = 'hello';
 
-  if (a === '1') {
-    // something
+  if (x == 'world') {
+    // Code
   }
 
-  $('h2').text('demo');
+  $('h1').text('Workflow');
 
 })(jQuery);
