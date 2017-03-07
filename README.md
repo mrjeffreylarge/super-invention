@@ -12,3 +12,5 @@
 
 3. run `gulp`
   * this will run the default build tasks and starts watching sass and js files for changes
+
+Or simply run `npm start`. This will run `npm install && bower install && gulp`.
